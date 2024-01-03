@@ -137,28 +137,7 @@ footerTemplate.innerHTML = `
                   </div>
                 </div>
               </form>
-              <!-- Mailchimp Subscription Form Validation-->
-              <script>
-                (function ($) {
-                  $('#mailchimp-subscription-form1').ajaxChimp({
-                    callback: mailChimpCallBack,
-                    url: '//thememascot.us9.list-manage.com/subscribe/post?u=a01f440178e35febc8cf4e51f&amp;id=49d6d30e1e'
-                  });
-
-                  function mailChimpCallBack(resp) {
-                    // Hide any previous response text
-                    var $mailchimpform = $('#mailchimp-subscription-form1'),
-                      $response = '';
-                    $mailchimpform.children(".alert").remove();
-                    if (resp.result === 'success') {
-                      $response = '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
-                    } else if (resp.result === 'error') {
-                      $response = '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
-                    }
-                    $mailchimpform.prepend($response);
-                  }
-                })(jQuery);
-              </script>
+             
             </div>
           </div>
         </div>
@@ -167,12 +146,7 @@ footerTemplate.innerHTML = `
             <div class="row pt-20 pb-20">
               <div class="col-sm-6">
                 <div class="footer-paragraph">
-                  © 2021 ThemeMascot. All Rights Reserved.
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="footer-paragraph text-right">
-                  Site Template
+                  © 2023 Candibrain. All Rights Reserved.
                 </div>
               </div>
             </div>
@@ -180,7 +154,6 @@ footerTemplate.innerHTML = `
         </div>
       </div>
     </footer>
-    <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
 `;
 
 class Footer extends HTMLElement {
