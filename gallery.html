@@ -54,6 +54,7 @@
     <script src="js/revolution-slider/extra-rev-slider1.js"></script>
     <script src="header.js"></script>
     <script src="footer.js"></script>
+    <script src="galleryItem.js"></script>
 
     <link href="css/style.css" rel="stylesheet" type="text/css">
 
@@ -163,6 +164,8 @@
                 </div>
             </div>
         </header>
+        
+        
 
         <!-- Start main-content -->
         <div class="main-content-area">
@@ -189,6 +192,8 @@
                 </div>
             </section>
 
+            
+
             <!-- Our Gallery -->
             <section>
                 <div class="container pb-70">
@@ -210,6 +215,9 @@
                                         class="isotope-layout grid-3 gutter-10 clearfix lightgallery-lightbox">
                                         <div class="isotope-layout-inner">
                                             <!-- the loop -->
+
+                                            <gallery-item-component></gallery-item-component>
+
                                             <!-- Isotope Item Start -->
                                             <div class="isotope-item laboratory surgery">
                                                 <div class="isotope-item-inner">
@@ -235,8 +243,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="title-holder">
-                                                                            <h5 class="title"><a href="#">Demo Gallery
-                                                                                    1</a></h5>
+                                                                            <h5 class="title"><a href="#">Demo Gallery</a></h5>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -271,8 +278,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="title-holder">
-                                                                            <h5 class="title"><a href="#">Demo Gallery
-                                                                                    1</a></h5>
+                                                                            <h5 class="title"><a href="#">Demo Gallery</a></h5>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -307,8 +313,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="title-holder">
-                                                                            <h5 class="title"><a href="#">Demo Gallery
-                                                                                    1</a></h5>
+                                                                            <h5 class="title"><a href="#">Demo Gallery</a></h5>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -343,8 +348,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="title-holder">
-                                                                            <h5 class="title"><a href="#">Demo Gallery
-                                                                                    1</a></h5>
+                                                                            <h5 class="title"><a href="#">Demo Gallery</a></h5>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -379,8 +383,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="title-holder">
-                                                                            <h5 class="title"><a href="#">Demo Gallery
-                                                                                    1</a></h5>
+                                                                            <h5 class="title"><a href="#">Demo Gallery</a></h5>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -415,8 +418,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="title-holder">
-                                                                            <h5 class="title"><a href="#">Demo Gallery
-                                                                                    1</a></h5>
+                                                                            <h5 class="title"><a href="#">Demo Gallery</a></h5>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -436,11 +438,14 @@
                     </div>
                 </div>
             </section>
+
+            
+           
             <script>
                 var galleryData;
                 document.addEventListener('DOMContentLoaded', function () {
                     // Your existing code for the AJAX GET request
-                    fetch('https://api.candibrain.com/api/read-only-gallery/')
+                    fetch('https://api.candibrain.com/api/read-only-gallery/?page_size=100')
                         .then(response => {
                             if (!response.ok) {
                                 throw new Error(`HTTP error! Status: ${response.status}`);
@@ -453,18 +458,14 @@
                             console.log("galleryDat", galleryData);
                             var isotope = document.querySelectorAll(".isotope-item");
                             
-                            console.log("isotope", isotope);
+                            // console.log("isotope", isotope);
                             isotope.forEach((each, index) => {
                                 var a = each.querySelectorAll('a')
                                 // var img = each.querySelector('img')
-                                console.log("a", a);
-                                a[0].innerHTML.src = "https://www.umass.edu/music/sites/default/files/assets/music/dance_degree_programs_bright600w-v2.jpg";
-                                a[1].outerHTML.src = "https://www.umass.edu/music/sites/default/files/assets/music/dance_degree_programs_bright600w-v2.jpg";
-                                // a[0]
-                                console.log("a-tag", a[0].innerHTML);
-
-                                console.log("***********************");
-                                // console.log("img", img);
+                                // console.log("a", a[0].querySelector("img").src);
+                                a[0].querySelector("img").src = galleryData[index].image;
+                                a[1].href = galleryData[index].image;
+                                a[1].setAttribute('data-exthumbimage', galleryData[index].image);
                             })
                             console.log("data", data);
                         })
@@ -474,19 +475,6 @@
                         });
                 });
 
-                // var isotope = document.querySelectorAll(".isotope-item");
-                // console.log("isotope", isotope);
-                // isotope.forEach((each, index) => {
-                //     var a = each.querySelectorAll('a')
-                //     // var img = each.querySelector('img')
-                //     console.log("a", a);
-                //     a[0].outerHTML.src = galleryData[index].image;
-                //     a[1].outerHTML.src = galleryData[index].image;
-                //     console.log("a-tag", a[0].outerHTML.src);
-
-                //     console.log("***********************");
-                //     // console.log("img", img);
-                // })
             </script>
 
         </div>
