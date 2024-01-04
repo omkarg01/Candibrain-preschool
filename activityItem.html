@@ -168,8 +168,7 @@
         <div class="main-content-area">
 
             <!-- Section: inner-header Start -->
-            <section class="page-title layer-overlay overlay-dark-9 section-typo-light bg-img-center"
-                data-tm-bg-img="https://via.placeholder.com/1920x800">
+            <section class="page-title layer-overlay overlay-dark-9 section-typo-light bg-img-center">
                 <div class="container pt-50 pb-50">
                     <div class="section-content">
                         <div class="row">
@@ -238,10 +237,20 @@
 
                     console.log("title", title);
 
-                    vidGalleryData.forEach(itemData => {
-                        if (itemData.type == myParam) {
-                            const galleryItem = document.createElement('div');
-                            galleryItem.innerHTML = `
+                    filteredVidGallery = vidGalleryData.filter(item => item.type === myParam);
+
+                    if (filteredVidGallery.length === 0) {
+                        console.log("empty");
+                        let emptyMsg = document.createElement("div")
+                        emptyMsg.innerHTML = `
+                        <h1 class="font-weight-100 font-64 text-center">No Videos to show!</h1>
+                        `
+                        isotopeWrapper.appendChild(emptyMsg);
+                    } else {
+                        filteredVidGallery.forEach(itemData => {
+                            if (itemData.type == myParam) {
+                                const galleryItem = document.createElement('div');
+                                galleryItem.innerHTML = `
                         <article class="post clearfix mb-30 pb-30">
                             <div class="entry-header">
                                 <div class="post-thumb thumb">
@@ -267,10 +276,12 @@
                             </div>
                         </article>
                         `
+                                isotopeWrapper.appendChild(galleryItem);
+                            }
+                        });
+                    }
 
-                            isotopeWrapper.appendChild(galleryItem);
-                        }
-                    });
+
                     console.log("data", data);
                 })
                 .catch(error => {
