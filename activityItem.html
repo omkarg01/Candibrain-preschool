@@ -199,7 +199,9 @@
                                 Return Home
                             </a>
                             <div class="blog-posts">
-
+                                <div id="loader" class="col-12 text-center">
+                                    <div class="preloader-speeding-wheel"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -215,6 +217,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('loader').style.display = 'block';
             // Your existing code for the AJAX GET request
             fetch('https://api.candibrain.com/api/read-only-video-gallery/?page_size=100')
                 .then(response => {
@@ -224,6 +227,9 @@
                     return response.json();
                 })
                 .then(data => {
+                    // Hide loader when data is received
+                    document.getElementById('loader').style.display = 'none';
+
                     // Handle the successful response here
                     vidGalleryData = data.results;
                     console.log("vid galleryDat", vidGalleryData);
@@ -285,6 +291,9 @@
                     console.log("data", data);
                 })
                 .catch(error => {
+                    // Hide loader when data is received
+                    document.getElementById('loader').style.display = 'none';
+                    
                     // Handle errors here
                     console.error('Error:', error);
                 });
