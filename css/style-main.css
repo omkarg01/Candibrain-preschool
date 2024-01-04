@@ -1495,7 +1495,7 @@ body.tm_wpb_vc_js_status_true .sidebar-area {
 header#header .header-top {
   color: black;
   padding: 0;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.7;
 }
 @media (max-width: 1199.98px) {
@@ -1541,7 +1541,7 @@ header#header .header-top .element .search-form .search-submit {
 }
 header#header .header-top .element .btn {
   vertical-align: middle;
-  font-size: 16px;
+  font-size: 15px;
 }
 header#header .header-top .element:not(.styled-icons) a:not(.btn):not(.styled-icons-item):not(.wp-block-button__link):not(.wp-block-button__link):not(.dropdown-item) {
   color: #fff;

@@ -44,42 +44,28 @@ footerTemplate.innerHTML = `
             <div class="col-md-6 col-lg-6 col-xl-4">
               <div class="widget tm-widget-contact-info contact-info-style1 contact-icon-theme-colored1">
                 <div class="thumb">
-                  <img alt="Logo" src="images/logo-wide-white.png">
+                  <img alt="Logo" class="w-25" src="images/CandiBrain.png">
                 </div>
-                <div class="description">203, Envato Labs, Behind Alis Steet, Melbourne, Australia.immersion along the
-                  information close the loop on focusing</div>
+                <div className="text-decoration font-size-15">
+                    <strong>
+                      Candibrain Preschool - an IITian's Initiative
+                    </strong>
+                  </div>
+                <div class="description">Vilankurchi, Saravanampatti, Coimbatore</div>
                 <ul class="mb-30">
                   <li class="contact-phone">
                     <div class="icon"><i class="flaticon-contact-042-phone-1"></i></div>
-                    <div class="text"><a href="tel:+123-456-789">+123-456-789</a></div>
+                    <div class="text"><a href="tel:+91 8925353323">+91 8925353323</a></div>
                   </li>
                   <li class="contact-email">
                     <div class="icon"><i class="flaticon-contact-043-email-1"></i></div>
-                    <div class="text"><a href="mailto:contact@yourdomain.com">contact@yourdomain.com</a></div>
+                    <div class="text"><a href="mailto:contact@candibrainpreschool.com">contact@candibrainpreschool.com</a></div>
                   </li>
                   <li class="contact-website">
                     <div class="icon"><i class="flaticon-contact-035-website"></i></div>
-                    <div class="text"><a target="_blank" href="http://yourdomain.com">yourdomain.com</a></div>
+                    <div class="text"><a target="_blank" href="https://www.candibrainpreschool.com">www.candibrainpreschool.com</a></div>
                   </li>
                 </ul>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-2">
-              <div class="widget widget_nav_menu">
-                <h4 class="widget-title">Services</h4>
-                <ul>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Our Course</a></li>
-                  <li><a href="#">Pricing Table</a></li>
-                  <li><a href="#">Gallery</a></li>
-                  <li><a href="#">Shop</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-3">
-              <div class="widget">
-                <h4 class="widget-title">Twitter Feed</h4>
-                <div class="twitter-feed list-border clearfix" data-username="Envato" data-count="2"></div>
               </div>
             </div>
             <div class="col-md-6 col-lg-6 col-xl-3">
@@ -103,43 +89,6 @@ footerTemplate.innerHTML = `
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 col-md-3 col-lg-3">
-              <div class="widget dark">
-                <h5 class="widget-title mb-10">Call Us Now</h5>
-                <div class="text-gray">
-                  +61 3 1234 5678 <br>
-                  +12 3 1234 5678
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4">
-              <div class="widget dark">
-                <h5 class="widget-title mb-10">Connect With Us</h5>
-                <ul class="styled-icons icon-dark icon-theme-colored1 icon-rounded clearfix">
-                  <li><a class="social-link" href="#"><i class="fab fa-facebook"></i></a></li>
-                  <li><a class="social-link" href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a class="social-link" href="#"><i class="fab fa-youtube"></i></a></li>
-                  <li><a class="social-link" href="#"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-5 col-lg-5">
-              <!-- Mailchimp Subscription Form-->
-              <form id="mailchimp-subscription-form1" class="newsletter-form">
-                <label for="mce-EMAIL"></label>
-                <div class="input-group">
-                  <input type="email" id="mce-EMAIL" data-tm-height="45px" class="form-control" placeholder="Your Email"
-                    name="EMAIL" value="">
-                  <div class="input-group-append tm-sc-button">
-                    <button type="submit" class="btn btn-theme-colored1 btn-sm" data-tm-height="45px">Subscribe</button>
-                  </div>
-                </div>
-              </form>
-             
-            </div>
-          </div>
         </div>
         <div class="footer-bottom" data-tm-bg-color="#2A2A2A">
           <div class="container">
