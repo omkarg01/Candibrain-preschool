@@ -287,13 +287,12 @@
                         });
                     }
 
-
                     console.log("data", data);
                 })
                 .catch(error => {
                     // Hide loader when data is received
                     document.getElementById('loader').style.display = 'none';
-                    
+
                     // Handle errors here
                     console.error('Error:', error);
                 });
