@@ -31,6 +31,7 @@
 
     <!-- CSS | Responsive media queries -->
     <link href="css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="css/gallery.css" rel="stylesheet" type="text/css">
     <!-- CSS | Style css. This is the file where you can place your own custom css code. Just uncomment it and use it. -->
 
     <!-- CSS | Theme Color -->
@@ -54,7 +55,7 @@
     <script src="js/revolution-slider/extra-rev-slider1.js"></script>
     <script src="header.js"></script>
     <script src="footer.js"></script>
-    <script src="galleryItem.js"></script>
+    <!-- <script src="galleryItem.js"></script> -->
 
     <link href="css/style.css" rel="stylesheet" type="text/css">
 
@@ -164,283 +165,76 @@
                 </div>
             </div>
         </header>
-        
-        
+
+
 
         <!-- Start main-content -->
         <div class="main-content-area">
             <!-- Section: page title -->
-            <section class="page-title layer-overlay overlay-dark-9 section-typo-light bg-img-center"
+            <!-- <section class="page-title layer-overlay overlay-dark-9 section-typo-light bg-img-center"
                 data-tm-bg-img="https://via.placeholder.com/1920x800">
                 <div class="container pt-50 pb-50">
                     <div class="section-content">
                         <div class="row">
                             <div class="col-md-12 text-center">
                                 <h2 class="title">Gallery</h2>
-                                <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumbs">
-                                    <div class="breadcrumbs">
-                                        <span><a href="#" rel="home">Home</a></span>
-                                        <span><i class="fa fa-angle-right"></i></span>
-                                        <span><a href="#">Pages</a></span>
-                                        <span><i class="fa fa-angle-right"></i></span>
-                                        <span class="active">Page Title</span>
-                                    </div>
-                                </nav>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
-            
 
+
+            <br>
             <!-- Our Gallery -->
-            <section>
-                <div class="container pb-70">
-                    <div class="section-content">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="tm-sc-gallery tm-sc-gallery-grid gallery-style1-basic">
-                                    <!-- Isotope Filter -->
-                                    <div class="isotope-layout-filter filter-style-3 text-center cat-filter-theme-colored1"
-                                        data-link-with="gallery-holder-743344">
-                                        <a href="#" class="active" data-filter="*">All</a>
-                                        <a href="#laboratory" class="" data-filter=".laboratory">Criminal</a>
-                                        <a href="#surgery" class="" data-filter=".surgery">Business</a>
-                                        <a href="#orthopaedics" class="" data-filter=".orthopaedics">Health</a>
-                                    </div>
-                                    <!-- End Isotope Filter -->
-                                    <!-- Isotope Gallery Grid -->
-                                    <div id="gallery-holder-743344"
-                                        class="isotope-layout grid-3 gutter-10 clearfix lightgallery-lightbox">
-                                        <div class="isotope-layout-inner">
-                                            <!-- the loop -->
-
-                                            <gallery-item-component></gallery-item-component>
-
-                                            <!-- Isotope Item Start -->
-                                            <div class="isotope-item laboratory surgery">
-                                                <div class="isotope-item-inner">
-                                                    <div class="tm-gallery">
-                                                        <div class="tm-gallery-inner">
-                                                            <div class="thumb">
-                                                                <a>
-                                                                    <img src="https://via.placeholder.com/350x265"
-                                                                        class="" alt="images" />
-                                                                </a>
-                                                            </div>
-                                                            <div class="tm-gallery-content-wrapper">
-                                                                <div class="tm-gallery-content">
-                                                                    <div class="tm-gallery-content-inner">
-                                                                        <div class="icons-holder-inner">
-                                                                            <div
-                                                                                class="styled-icons icon-dark icon-circled icon-theme-colored1">
-                                                                                <a class="lightgallery-trigger styled-icons-item"
-                                                                                    data-exthumbimage="images/shop/portfolio-sq2.jpg"
-                                                                                    title="photo"
-                                                                                    href="images/shop/portfolio-sq2.jpg"><i
-                                                                                        class="fa fa-plus"></i></a>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="title-holder">
-                                                                            <h5 class="title"><a href="#">Demo Gallery</a></h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Isotope Item End -->
-
-                                            <!-- Isotope Item Start -->
-                                            <div class="isotope-item surgery orthopaedics">
-                                                <div class="isotope-item-inner">
-                                                    <div class="tm-gallery">
-                                                        <div class="tm-gallery-inner">
-                                                            <div class="thumb">
-                                                                <a href="#"><img
-                                                                        src="https://via.placeholder.com/350x265"
-                                                                        class="" alt="images" /></a>
-                                                            </div>
-                                                            <div class="tm-gallery-content-wrapper">
-                                                                <div class="tm-gallery-content">
-                                                                    <div class="tm-gallery-content-inner">
-                                                                        <div class="icons-holder-inner">
-                                                                            <div
-                                                                                class="styled-icons icon-dark icon-circled icon-theme-colored1">
-                                                                                <a class="lightgallery-trigger styled-icons-item"
-                                                                                    data-exthumbimage="images/shop/portfolio-sq1.jpg"
-                                                                                    title="photo"
-                                                                                    href="images/shop/portfolio-sq1.jpg"><i
-                                                                                        class="fa fa-plus"></i></a>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="title-holder">
-                                                                            <h5 class="title"><a href="#">Demo Gallery</a></h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Isotope Item End -->
-
-                                            <!-- Isotope Item Start -->
-                                            <div class="isotope-item laboratory surgery">
-                                                <div class="isotope-item-inner">
-                                                    <div class="tm-gallery">
-                                                        <div class="tm-gallery-inner">
-                                                            <div class="thumb">
-                                                                <a href="#"><img
-                                                                        src="https://via.placeholder.com/350x265"
-                                                                        class="" alt="images" /></a>
-                                                            </div>
-                                                            <div class="tm-gallery-content-wrapper">
-                                                                <div class="tm-gallery-content">
-                                                                    <div class="tm-gallery-content-inner">
-                                                                        <div class="icons-holder-inner">
-                                                                            <div
-                                                                                class="styled-icons icon-dark icon-circled icon-theme-colored1">
-                                                                                <a class="lightgallery-trigger styled-icons-item"
-                                                                                    data-exthumbimage="images/shop/portfolio-sq3.jpg"
-                                                                                    title="photo"
-                                                                                    href="images/shop/portfolio-sq3.jpg"><i
-                                                                                        class="fa fa-plus"></i></a>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="title-holder">
-                                                                            <h5 class="title"><a href="#">Demo Gallery</a></h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Isotope Item End -->
-
-                                            <!-- Isotope Item Start -->
-                                            <div class="isotope-item laboratory surgery">
-                                                <div class="isotope-item-inner">
-                                                    <div class="tm-gallery">
-                                                        <div class="tm-gallery-inner">
-                                                            <div class="thumb">
-                                                                <a href="#"><img
-                                                                        src="https://via.placeholder.com/350x265"
-                                                                        class="" alt="images" /></a>
-                                                            </div>
-                                                            <div class="tm-gallery-content-wrapper">
-                                                                <div class="tm-gallery-content">
-                                                                    <div class="tm-gallery-content-inner">
-                                                                        <div class="icons-holder-inner">
-                                                                            <div
-                                                                                class="styled-icons icon-dark icon-circled icon-theme-colored1">
-                                                                                <a class="lightgallery-trigger styled-icons-item"
-                                                                                    data-exthumbimage="images/shop/portfolio-sq1.jpg"
-                                                                                    title="photo"
-                                                                                    href="images/shop/portfolio-sq1.jpg"><i
-                                                                                        class="fa fa-plus"></i></a>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="title-holder">
-                                                                            <h5 class="title"><a href="#">Demo Gallery</a></h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Isotope Item End -->
-
-                                            <!-- Isotope Item Start -->
-                                            <div class="isotope-item laboratory surgery">
-                                                <div class="isotope-item-inner">
-                                                    <div class="tm-gallery">
-                                                        <div class="tm-gallery-inner">
-                                                            <div class="thumb">
-                                                                <a href="#"><img
-                                                                        src="https://via.placeholder.com/750x265"
-                                                                        class="" alt="images" /></a>
-                                                            </div>
-                                                            <div class="tm-gallery-content-wrapper">
-                                                                <div class="tm-gallery-content">
-                                                                    <div class="tm-gallery-content-inner">
-                                                                        <div class="icons-holder-inner">
-                                                                            <div
-                                                                                class="styled-icons icon-dark icon-circled icon-theme-colored1">
-                                                                                <a class="lightgallery-trigger styled-icons-item"
-                                                                                    data-exthumbimage="images/shop/portfolio-sq3.jpg"
-                                                                                    title="photo"
-                                                                                    href="images/shop/portfolio-sq3.jpg"><i
-                                                                                        class="fa fa-plus"></i></a>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="title-holder">
-                                                                            <h5 class="title"><a href="#">Demo Gallery</a></h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Isotope Item End -->
-
-                                            <!-- Isotope Item Start -->
-                                            <div class="isotope-item laboratory surgery">
-                                                <div class="isotope-item-inner">
-                                                    <div class="tm-gallery">
-                                                        <div class="tm-gallery-inner">
-                                                            <div class="thumb">
-                                                                <a href="#"><img
-                                                                        src="https://via.placeholder.com/450x250"
-                                                                        class="" alt="images" /></a>
-                                                            </div>
-                                                            <div class="tm-gallery-content-wrapper">
-                                                                <div class="tm-gallery-content">
-                                                                    <div class="tm-gallery-content-inner">
-                                                                        <div class="icons-holder-inner">
-                                                                            <div
-                                                                                class="styled-icons icon-dark icon-circled icon-theme-colored1">
-                                                                                <a class="lightgallery-trigger styled-icons-item"
-                                                                                    data-exthumbimage="images/shop/portfolio-sq1.jpg"
-                                                                                    title="photo"
-                                                                                    href="images/shop/portfolio-sq1.jpg"><i
-                                                                                        class="fa fa-plus"></i></a>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="title-holder">
-                                                                            <h5 class="title"><a href="#">Demo Gallery</a></h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Isotope Item End -->
-                                            <!-- end of the loop -->
-                                        </div>
-                                    </div>
-                                    <!-- End Isotope Gallery Grid -->
-                                </div>
-                            </div>
-                        </div>
+            <div class="container">
+                <div id="gallery" class="row ">
+                    <!-- <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h1 class="gallery-title">Gallery</h1>
+                    </div> -->
+                    <div id="gallery-title" align="center">
+                        <button class="btn btn-default filter-button" data-filter="all">All</button>
+                        <button class="btn btn-default filter-button" data-filter="coding">Coding</button>
+                        <button class="btn btn-default filter-button" data-filter="chess">Chess</button>
+                        <button class="btn btn-default filter-button" data-filter="karate">Karate</button>
+                        <button class="btn btn-default filter-button" data-filter="robotics">Robotics</button>
                     </div>
-                </div>
-            </section>
+                    <br />
 
-            
-           
+
+                </div>
+            </div>
+
+            <script>
+                $(document).ready(function () {
+
+                    $(".filter-button").click(function () {
+                        var value = $(this).attr('data-filter');
+
+                        console.log("value", value);
+                        console.log("call");
+                        if (value == "all") {
+                            //$('.filter').removeClass('hidden');
+                            $('.filter').show('1000');
+                        }
+                        else {
+                            //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+                            //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+                            $(".filter").not('.' + value).hide('3000');
+                            $('.filter').filter('.' + value).show('3000');
+
+                        }
+                    });
+
+                    if ($(".filter-button").removeClass("active")) {
+                        $(this).removeClass("active");
+                    }
+                    $(this).addClass("active");
+
+                });
+            </script>
+
             <script>
                 var galleryData;
                 document.addEventListener('DOMContentLoaded', function () {
@@ -456,17 +250,54 @@
                             // Handle the successful response here
                             galleryData = data.results;
                             console.log("galleryDat", galleryData);
-                            var isotope = document.querySelectorAll(".isotope-item");
+
+
+                            var isotopeWrapper = document.querySelector("#gallery");
+                            console.log("isotopeWrapper", isotopeWrapper);
+
                             
-                            // console.log("isotope", isotope);
-                            isotope.forEach((each, index) => {
-                                var a = each.querySelectorAll('a')
-                                // var img = each.querySelector('img')
-                                // console.log("a", a[0].querySelector("img").src);
-                                a[0].querySelector("img").src = galleryData[index].image;
-                                a[1].href = galleryData[index].image;
-                                a[1].setAttribute('data-exthumbimage', galleryData[index].image);
-                            })
+
+
+                            galleryData.forEach(itemData => {
+                                const item = document.createElement('div');
+                                // item.className = "isotope-item"
+                                // item.innerHTML = `
+                                // <div class="isotope-item-inner">
+                                //     <div class="tm-gallery">
+                                //         <div class="tm-gallery-inner">
+                                //             <div class="thumb gallery_product filter coding">
+                                //                 <a href="#"><img src="${itemData.image}" class=""
+                                //                         alt="images" /></a>
+                                //             </div>
+                                //             <div class="tm-gallery-content-wrapper">
+                                //                 <div class="tm-gallery-content">
+                                //                     <div class="tm-gallery-content-inner">
+                                //                         <div class="icons-holder-inner">
+                                //                             <div
+                                //                                 class="styled-icons icon-dark icon-circled icon-theme-colored1">
+                                //                                 <a class="lightgallery-trigger styled-icons-item"
+                                //                                     data-exthumbimage="${itemData.image}"
+                                //                                     title="photo"
+                                //                                     href="${itemData.image}"><i
+                                //                                         class="fa fa-plus"></i></a>
+                                //                             </div>
+                                //                         </div>
+                                //                         <div class="title-holder">
+                                //                             <h5 class="title"><a href="#">Demo Gallery</a></h5>
+                                //                         </div>
+                                //                     </div>
+                                //                 </div>
+                                //             </div>
+                                //         </div>
+                                //     </div>
+                                // </div>
+                                // `
+                                item.className = `gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter ${itemData.type}`
+                                item.innerHTML = `<img src="${itemData.image}" class="img-responsive">`
+                                isotopeWrapper.appendChild(item)
+                            });
+                            console.log("galleryItem", galleryItem);
+
                             console.log("data", data);
                         })
                         .catch(error => {
@@ -476,6 +307,8 @@
                 });
 
             </script>
+
+
 
         </div>
         <!-- end main-content -->
